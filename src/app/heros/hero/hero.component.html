@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let hero of heroes">
+    <p> I am  hero {{hero.name}} (id: {{hero.id}})</p>
+  </li>
+</ul>
+<div>
+  <button (click)="addHero('Turtle')">Add Trutle</button>
+</div>
+<div>
+  <button (click)="rename(heroes[0])">Rename</button>
+</div>
+<div>
+  <button (click)="remove(heroes[4])">Remove</button>
+</div>
+
